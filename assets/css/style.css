@@ -334,10 +334,11 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0;
-  background: rgba(4, 7, 9, 0.9);
-  transition: 0.3s;
+  bottom: 0px;
+  background: rgba(4, 7, 9, 0.486);
+  transition: .8s;
   z-index: 999;
+  opacity: 1;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -349,21 +350,22 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
+  top: 100px;
+  right: 35px;
+  bottom: 100px;
+  left: 35px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: rgb(37, 37, 37);
   overflow-y: auto;
-  transition: 0.3s;
+  color: #ffff;
+  transition: 0.5s;
 }
 
 .navbar-mobile a {
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-size: 15px;
-  color: #15222b;
+  color: #f1f1f1;
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
@@ -382,20 +384,23 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: rgb(37, 37, 37);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
 .navbar-mobile .dropdown ul li {
   min-width: 200px;
+  color: #f1f1f1;
 }
 
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
+  color: #f1f1f1;
 }
 
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
+  color: #f1f1f1;
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
@@ -412,19 +417,16 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/stage.jpg") top center;
-
-
-    background-repeat: no-repeat;
-    background-size: cover;
-
+  background: url("../img/dp2.png") top center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   padding: 0;
 }
 
 #hero:before {
   content: "";
-  background: rgba(13, 20, 26, 0.7);
+  background: rgba(13, 20, 26, 0.377);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -512,6 +514,16 @@ h1, h2, h3, h4, h5, h6 {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
+  }
+
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/bg-mob.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 0;
   }
   #hero h2 {
     font-size: 18px;
