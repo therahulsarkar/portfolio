@@ -866,8 +866,13 @@ section {
 
 .feature-container{
 background-color: var(--backgroundup);
-color: rgb(204, 204, 204);
+color: rgb(230, 230, 230);
+pointer-events: none;
+cursor: default;
+text-decoration: none;
 }
+
+
 .features .nav-tabs {
   border: 0;
 }
