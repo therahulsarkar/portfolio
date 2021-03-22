@@ -5,6 +5,14 @@
 * License: https://bootstrapmade.com/license/
 */
 
+:root{
+  --background: #242526;
+  --backgroundup: #333333;
+  --lightwhite: #8899a6;
+}
+
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -852,6 +860,14 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+.features{
+  background-color: var(--background);
+}
+
+.feature-container{
+background-color: var(--backgroundup);
+color: rgb(204, 204, 204);
+}
 .features .nav-tabs {
   border: 0;
 }
