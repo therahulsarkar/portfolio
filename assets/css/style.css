@@ -1307,11 +1307,17 @@ text-decoration: none;
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+.contact{
+  background: var(--background);
+  border-color: #ff4a17;
+}
 .contact .info-box {
   color: #444444;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(44, 44, 44, 0.6);
   padding: 20px 0 30px 0;
+  border-color: #ff4a17;
 }
 
 .contact .info-box i {
@@ -1319,6 +1325,7 @@ text-decoration: none;
   color: #ff4a17;
   border-radius: 50%;
   padding: 8px;
+  border-color: #ff4a17;
 }
 
 .contact .info-box h3 {
@@ -1336,8 +1343,9 @@ text-decoration: none;
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  /* box-shadow: 0 0 30px rgba(66, 66, 66, 0.6); */
   padding: 30px;
+  
 }
 
 .contact .php-email-form .error-message {
@@ -1347,6 +1355,7 @@ text-decoration: none;
   text-align: left;
   padding: 15px;
   font-weight: 600;
+  
 }
 
 .contact .php-email-form .error-message br + br {
@@ -1360,6 +1369,7 @@ text-decoration: none;
   text-align: center;
   padding: 15px;
   font-weight: 600;
+  
 }
 
 .contact .php-email-form .loading {
@@ -1377,7 +1387,7 @@ text-decoration: none;
   height: 24px;
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
-  border-top-color: #eee;
+  border-color: #ff4a17;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
