@@ -1084,12 +1084,16 @@ section {
   }
 }
 .feature-container{
-background-color: var(--backgroundup);
+/* background-color: var(--backgroundup); */
 color: rgba(255, 255, 255, 0.842);
 /* pointer-events: none; */
 cursor: pointer;
 text-decoration: none;
-border-radius: 2px;
+border-radius: 5px;
+background: #242424;
+box-shadow:  7px 7px 27px #171717,
+             -7px -7px 27px #313131;
+
 }
 
 
@@ -1182,8 +1186,11 @@ border-radius: 2px;
 .services .icon-box {
   margin-bottom: 20px;
   padding: 30px;
-  border-radius: 6px;
-  background: var(--backgroundup);
+  border: 1px solid #131313;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #202020, #272727);
+  box-shadow:  14px 14px 28px #1d1d1d,
+               -14px -14px 28px #0f0f0f;
 }
 
 
@@ -1222,6 +1229,7 @@ border-radius: 2px;
 
 #services p{
 color: #fff;
+
 }
 
 .services .icon-box:hover h4 a {
@@ -1508,6 +1516,45 @@ font-size:55px;
   padding: 0;
 }
 
+.peep{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  padding: 30px;
+  margin: 25px;
+background: #141414;
+box-shadow:  29px 29px 58px #0d0d0d,
+             -29px -29px 58px #1b1b1b;
+}
+
+@media (max-width: 768px) {
+  .peep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    padding: 0px;
+    margin: 15px;
+  background: #141414;
+  box-shadow:  29px 29px 58px #0d0d0d,
+               -29px -29px 58px #1b1b1b;
+  }
+
+  .peep img{
+    padding: 0px;
+    width: 150%;
+    height: auto;
+  }
+}
+
+
+.peep img{
+  padding: 30px;
+  width: 100%;
+  height: auto;
+}
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
@@ -1569,10 +1616,12 @@ font-size:55px;
 .contact .info-box {
   color: #444444;
   text-align: center;
-  box-shadow: 0 0 30px rgba(44, 44, 44, 0.6);
+  /* box-shadow: 0 0 30px rgba(44, 44, 44, 0.6); */
   padding: 20px 0 30px 0;
   border-color: #ff4a17;
 }
+
+
 
 .contact .info-box i {
   font-size: 32px;
