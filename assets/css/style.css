@@ -448,7 +448,7 @@ title{
 #hero .hero-container {
   position: absolute;
   bottom: 0;
-  top: 0;
+  top: 20px;
   left: 0;
   right: 0;
   display: flex;
@@ -459,16 +459,16 @@ title{
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
+  /* margin: 20px 0 10px 0; */
   font-size: 70px;
   font-weight: 1000;
-  line-height: 56px;
+  /* line-height: 56px; */
   text-transform: uppercase;
   background: linear-gradient(to left, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-top: 100px;
   
 }
 
@@ -480,61 +480,39 @@ title{
 
 #hero h2 {
   color: #eee;
+  margin-top:100px;
   margin-bottom: 50px;
   font-size: 50px;
 }
 
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-}
-
 #hero .btn-get-started {
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  /* text-transform: uppercase; */
   font-weight: 500;
   font-size: 14px;
   display: inline-block;
   padding: 10px 35px 10px 35px;
   border-radius: 50px;
   transition: 0.5s;
-  color: #fff;
+  color: rgb(255, 255, 255);
   background: #ff491700;
-  border: 2px solid #ff4a17;
+  border: 2.3px solid #eb3401;
   margin-top: 30px;
+
+
 }
 
 #hero .btn-get-started:hover {
   border-color: #fff;
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ffff;
+  transition: all 0.5s ease-in-out;
+  font-size:15px;
+  
 }
 
-#hero .btn-watch-video {
-  font-size: 16px;
-  display: inline-block;
-  transition: 0.5s;
-  margin-left: 25px;
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#hero .btn-watch-video i {
-  line-height: 0;
-  color: #fff;
-  font-size: 32px;
-  transition: 0.3s;
-  margin-right: 8px;
-}
-
-#hero .btn-watch-video:hover i {
-  color: #ff4a17;
-}
 
 @media (min-width: 1024px) {
   #hero {
@@ -570,6 +548,177 @@ title{
     font-size: 14px;
     margin-top: 100px;
   }
+
+  .mouse{
+    margin-top: 90px;
+  }
+}
+
+/* Scroll section */
+.mouse_scroll {
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	/* height: 100px; */
+  position: absolute;
+bottom: 30px;
+}
+
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 4px;
+  
+  width: 16px;
+  height: 16px;
+}
+
+
+.unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  
+  margin-top: -6px;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  animation-delay: .3s;
+  animation-direction: alternate;
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid rgb(255, 255, 255);
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: rgb(228, 0, 95);
+  position: relative;
+  height: 4px;
+  width: 4px;
+  border: 2px solid rgb(228, 0, 95);
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@-o-keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
 }
 
 /*--------------------------------------------------------------
@@ -920,12 +1069,27 @@ section {
   background-color: var(--background);
 }
 
+.feature-container:hover{
+  animation: zovo 2s linear infinite;
+  
+}
+
+
+@keyframes zovo {
+  0% {
+    border-bottom: 2px solid rgb(253, 11, 124);
+  }
+  100% {
+    border-bottom: 2px solid #FF4136;
+  }
+}
 .feature-container{
 background-color: var(--backgroundup);
-color: rgb(230, 230, 230);
-pointer-events: none;
-cursor: default;
+color: rgba(255, 255, 255, 0.842);
+/* pointer-events: none; */
+cursor: pointer;
 text-decoration: none;
+border-radius: 2px;
 }
 
 
@@ -1412,7 +1576,9 @@ font-size:55px;
 
 .contact .info-box i {
   font-size: 32px;
-  color: #ff4a17;
+  background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   border-radius: 50%;
   padding: 8px;
   border-color: #ff4a17;
@@ -1420,7 +1586,9 @@ font-size:55px;
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1430,6 +1598,7 @@ font-size:55px;
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  color: #ffff;
 }
 
 .contact .php-email-form {
@@ -1461,6 +1630,8 @@ font-size:55px;
   font-weight: 600;
   
 }
+
+
 
 .contact .php-email-form .loading {
   display: none;
