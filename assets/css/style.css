@@ -318,8 +318,8 @@ title{
   }
 }
 
-/**
-* Mobile Navigation 
+
+/* Mobile Navigation 
 */
 .mobile-nav-toggle {
   color: #fff;
@@ -578,7 +578,7 @@ bottom: 30px;
   border-bottom: 2px solid white;
   margin: 0 0 3px 4px;
   
-  width: 16px;
+  width: 14px;
   height: 16px;
 }
 
@@ -627,15 +627,26 @@ bottom: 30px;
   animation-direction: alternate;
   margin-top: -6px;
 }
+.particles {
+   position: absolute;
+   left: 0; 
+   top: 100px;
+   overflow: hidden;
+   right: 0;
+    bottom: 0; 
+}
+canvas { display: block; }
 
 .mouse {
-  height: 42px;
-  width: 24px;
+  height: 35px;
+  width: 20px;
   border-radius: 14px;
   transform: none;
   border: 2px solid rgb(255, 255, 255);
   top: 170px;
+  opacity: 0.7;
 }
+
 
 .wheel {
   height: 5px;
