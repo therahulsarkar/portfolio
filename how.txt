@@ -1,6 +1,6 @@
 portfolio section https://bootstrapmade.com/demo/FlexStart/
-
 background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 700;
+
+  animation: zoominout 5s infinite;
