@@ -538,10 +538,8 @@ title{
   }
 
   #textanimate{
-   /* position: absolute; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+   position: absolute;
+  
   }
   #hero h2{
     
