@@ -510,6 +510,7 @@ title{
   color: #ffff;
   transition: all 0.5s ease-in-out;
   font-size:15px;
+  cursor: pointer;
   
 }
 
@@ -550,12 +551,12 @@ title{
   #hero .btn-get-started {
     font-weight: 500;
     font-size: 14px;
-    margin-top: 30vh;
+    margin-top: 20vh;
    
   }
 
   .mouse{
-    margin-top: 60px;
+    margin-top: 70px;
   }
 
   .mouse_scroll{
