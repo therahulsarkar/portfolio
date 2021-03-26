@@ -551,10 +551,17 @@ title{
     font-weight: 500;
     font-size: 14px;
     margin-top: 40vh;
+   
   }
 
   .mouse{
     margin-top: 60px;
+  }
+
+  .mouse_scroll{
+    display: block;
+    width: 24px;
+    padding-bottom: 70px;
   }
 }
 
