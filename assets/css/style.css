@@ -5,14 +5,13 @@
   --lightwhite: #8899a6;
 }
 
-
-
 /*--------------------------------------------------------------
-# General
+ General
 --------------------------------------------------------------*/
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--background);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -25,11 +24,9 @@ a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-  text-decoration: none;
-}
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -201,7 +198,7 @@ title{
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
   white-space: nowrap;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .navbar a i {
@@ -217,10 +214,10 @@ title{
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #ff4a17;
+  background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
   visibility: hidden;
   width: 0px;
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
 }
 
 .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
@@ -232,25 +229,6 @@ title{
   color: #fff;
 }
 
-.navbar .getstarted {
-  color: #fff;
-  width: 30px;
-  /* padding: 8px 25px;
-  margin-left: 30px;
-  border-radius: 4px;
-  /* color: #fff;
-  border: 2px solid #fff; */ */
-}
-
-/* .navbar .getstarted:hover {
-  color: #fff;
-  background: #fd3800;
-  border-color: #ff4a17;
-} */
-
-.navbar > ul > li > .getstarted:before {
-  visibility: hidden;
-}
 
 .navbar .dropdown ul {
   display: block;
@@ -262,7 +240,7 @@ title{
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #ffff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
@@ -317,12 +295,10 @@ title{
 }
 
 
-/* Mobile Navigation 
-*/
+/* Mobile Navigation */
 .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
-  cursor: pointer;
   display: none;
   line-height: 0;
   transition: 0.5s;
@@ -344,10 +320,9 @@ title{
   right: 0;
   left: 0;
   bottom: 0px;
-  background: rgba(4, 7, 9, 0.486);
+  background: rgba(255, 255, 255, 0.486);
   transition: .8s;
   z-index: 999;
-  opacity: 1;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -359,22 +334,21 @@ title{
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 100px;
-  right: 35px;
-  bottom: 100px;
-  left: 35px;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: rgb(37, 37, 37);
+  background-color: #fff;
   overflow-y: auto;
-  color: #ffff;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .navbar-mobile a {
   padding: 10px 10px;
   font-size: 15px;
-  color: #f1f1f1;
+  color: #15222b;
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
@@ -393,23 +367,23 @@ title{
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: rgb(37, 37, 37);
+  background:#fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
 .navbar-mobile .dropdown ul li {
   min-width: 200px;
-  color: #f1f1f1;
+  /* color: #f1f1f1; */
 }
 
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
-  color: #f1f1f1;
+  /* color: #f1f1f1; */
 }
 
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
-  color: #f1f1f1;
+  /* color: #f1f1f1; */
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
@@ -426,7 +400,7 @@ title{
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("") top center;
+  background: url("/assets/img/back.jpg") top center;
   background-repeat: no-repeat;
   background-size:cover;
   position: relative;
@@ -772,7 +746,9 @@ section {
   color: #f5f5f5;
 }
 
-
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Features
@@ -890,6 +866,58 @@ box-shadow:  7px 7px 27px #171717,
   margin-bottom: 0;
 }
 
+.net .net2{
+  padding: 0;
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  .net2{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+  }
+
+  .net2 img{
+    height: 200px;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    animation: float 3s ease-in infinite;
+  }
+}
+.net img{
+  height: 180px;
+  width: 180px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 85vw;
+  top: -12vh;
+  animation: float 3s ease-in infinite;
+}
+
+@keyframes float {
+  50% {
+  transform: translate(0, 20px);
+  }
+}
+
+.net2 img{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 5vw;
+  top: 40vh;
+  animation: float 3s ease-in infinite;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -951,6 +979,13 @@ color: #fff;
 .service-section img{
   width: 60px;
   height: 60px;
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  50% {
+  transform: translate(0, 10px);
+  }
 }
 
 .service-details{
@@ -1016,6 +1051,9 @@ box-shadow:  29px 29px 58px #0d0d0d,
   width: 100%;
   height: auto;
 }
+
+
+
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
@@ -1094,7 +1132,21 @@ box-shadow:  29px 29px 58px #0d0d0d,
   -webkit-text-fill-color: transparent;
   border-radius: 50%;
   padding-top: 18px;
+animation: zoominout 5s infinite;
 }
+
+@keyframes zoominout {
+  0% {
+      transform: scale(1,1);
+  }
+  50% {
+      transform: scale(1.4,1.4);
+  }
+  100% {
+      transform: scale(1,1);
+  }
+}
+
 
 .contact .info-box h3 {
   font-size: 20px;
@@ -1225,7 +1277,7 @@ box-shadow:  29px 29px 58px #0d0d0d,
   align-items: center;
   border-radius: 10px;
   padding-bottom: 25px;
-  background: linear-gradient(145deg, #131313, #101010);
+  background: linear-gradient(45deg, rgb(34, 34, 34), #181818);
   box-shadow:  5px 5px 10px #0e0e0e,
   -5px -5px 10px #161616;
   /* border: 2px solid #0f0f0f; */
@@ -1238,13 +1290,8 @@ box-shadow:  29px 29px 58px #0d0d0d,
   -webkit-text-fill-color: transparent;
   color: #fff;
 }
-/* 
-.contact-box2{
-  border-radius: 15px;
-  background: linear-gradient(145deg, #101010, #131313);
-  box-shadow:  8px 8px 18px #0e0e0e,
-               -8px -8px 18px #161616;
-} */
+ 
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1356,7 +1403,7 @@ box-shadow:  29px 29px 58px #0d0d0d,
 }
 
 #footer .footer-top .footer-newsletter form {
-  margin-top: 30px;
+  margin-top: 10px;
   background: #fff;
   padding: 6px 10px;
   position: relative;

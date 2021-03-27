@@ -1,14 +1,9 @@
-/**
-* Template Name: Dewi - v4.0.1
-* Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
   /**
-   * Easy selector helper function
+   Easy selector helper function
    */
   const select = (el, all = false) => {
     el = el.trim()
