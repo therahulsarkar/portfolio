@@ -139,6 +139,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-weight: 700;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 #header .logo {
@@ -442,6 +443,7 @@ title{
   margin-top:100px;
   margin-bottom: 50px;
   font-size: 50px;
+  cursor: pointer;
 }
 
 #hero .btn-get-started {
@@ -457,8 +459,6 @@ title{
   background: #ff491700;
   border: 2.3px solid #eb3401;
   margin-top: 30px;
-
-
 }
 
 #hero .btn-get-started:hover {

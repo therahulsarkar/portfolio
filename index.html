@@ -71,11 +71,11 @@
   <section id="hero">
     <div class="hero-container" data-aos="fade-up" data-aos-delay="150">
           
-        <h2 id="textanimate"></h2> 
+        <h2 id="textanimate" data-speed="7" class="layer"></h2> 
           <!-- <span class="wrap"></span> -->
 
         <div class="d-flex">
-          <a href="#services"  class="btn-get-started">Know More</a>
+          <a href="#services"  id="knowmore" class="btn-get-started">Know More</a>
         </div>
 
         <!-- Mouse scrolling -->
@@ -293,7 +293,7 @@
 
 
     <br><br>
-  
+
   <!--Wave particle section -->
   <div class="particles"> </div>
 
@@ -309,7 +309,7 @@
 
       <div class="row">
         <div class="col-lg-6">
-          <div class="row">
+          <div class="row"  data-aos="fade-up">
 
             <div class="col-md-12 contact-box mb-2">
               <div class="info-box" data-aos="fade-down-right">
@@ -468,5 +468,18 @@
   <script src="./assets/js/form.js"></script>
   <script src="./assets/js/waves.js"></script>
 
+
+  <!-- Header Text Parallax -->
+  <script type="text/javascript">
+    document.addEventListener("mousemove", parallaxmove);
+    function parallaxmove(e){
+        this.querySelectorAll('.layer').forEach(layer =>{
+            const speed = layer.getAttribute('data-speed');
+            const x = (window.innerWidth - e.pageX*speed)/80;
+            const y = (window.innerHeight - e.pageY*speed)/80;
+            layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+        })
+    }
+</script>
 </body>
 </html>

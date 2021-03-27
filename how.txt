@@ -4,3 +4,6 @@ background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%
   -webkit-text-fill-color: transparent;
 
   animation: zoominout 5s infinite;
+
+  backdrop-filter: blur(6px);
+  background-color: rgba(178, 60, 253, 0);
