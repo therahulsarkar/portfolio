@@ -480,6 +480,16 @@ title{
   }
 }
 
+
+@media (min-width: 1100px) {
+  #hero h2{
+    font-size: 5rem;
+    position: relative;
+    bottom: 8vh; 
+   }
+}
+
+
 /* For Mobile phones */
 @media (max-width: 768px) {
 
@@ -494,22 +504,20 @@ title{
   }
 
 
-
   #textanimate{
    display: flex;
    align-items: center;
    justify-content:center;
   }
   #hero h2{
-    font-size: 35px;
+    font-size: 2rem;
     position: relative;
     bottom: 10vh;
    }
 
-
   #hero .btn-get-started {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.7rem;
     margin-top: 1vh;
    
   }
@@ -596,12 +604,14 @@ title{
 .particles {
    position: absolute;
    left: 0; 
-   top: 100px;
+   top: 120px;
    overflow: hidden;
    right: 0;
   bottom: 0; 
 }
-/* canvas { display: block; } */
+
+
+canvas { display: block; }
 
 /* Scrollling mouse */
 .mouse {
@@ -874,20 +884,7 @@ box-shadow:  7px 7px 27px #171717,
 
 @media (max-width: 768px) {
   .net2{
-    padding: 0;
-    margin: 0;
-    position: absolute;
-  }
-
-  .net2 img{
-    height: 200px;
-    width: 200px;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    left: 100px;
-    top: 300px;
-    animation: float 3s ease-in infinite;
+    display: none;
   }
 }
 .net img{
@@ -897,7 +894,7 @@ box-shadow:  7px 7px 27px #171717,
   margin: 0;
   position: absolute;
   left: 85vw;
-  top: -12vh;
+  top: -10vh;
   animation: float 3s ease-in infinite;
 }
 
