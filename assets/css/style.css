@@ -628,7 +628,7 @@ title{
   font-weight: 800;
   outline: none;
   text-transform: uppercase;
-  background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
+  background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #ff3b05 50%, #de005e 75%, #5335cf 100%);
   background-size: 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
@@ -1284,21 +1284,6 @@ animation: zoominout 5s infinite;
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type="submit"] {
-  background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
-  font-weight: 300;
-  border: 0;
-  padding-top: 10px;
-  padding: 8px 20px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 5px;
-}
-
-.contact .php-email-form button[type="submit"]:hover {
-  background: linear-gradient(to left, rgb(199, 0, 0) 0%, rgb(253, 11, 124) 100%);
-  font-weight: 400;
-}
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -1498,6 +1483,25 @@ box-shadow:  5px 5px 7px #0e0e0e,
   }
 }
 
+.contact .php-email-form button[type="submit"] {
+  background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #ff4f09 50%, #de005e 75%, #5335cf 100%);
+  background-size: 400%;
+  font-weight: 300;
+  border: 0;
+  padding-top: 10px;
+  padding: 8px 20px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+  animation: animatebtn 10s linear infinite; 
+}
+
+@keyframes animatebtn {
+  to{
+    background-position: 400%;
+  }
+}      
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1632,13 +1636,21 @@ box-shadow:  5px 5px 7px #0e0e0e,
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #ff2609 50%, #de005e 75%, #5335cf 100%);
+  background-size: 400%;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
+  transition: 0.4s;
+  animation: animateemail 10s linear infinite; 
 }
+
+@keyframes animateemail {
+  to{
+    background-position: 400%;
+  }
+} 
+
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
   background: linear-gradient(to left, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
