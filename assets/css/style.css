@@ -756,7 +756,7 @@ title{
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -802,6 +802,137 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about .content + .content {
+  margin-top: 30px;
+}
+
+.about{
+  margin-bottom: 0px;
+}
+
+.about .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #ffff;
+}
+
+.about .content p {
+  color: #ffff;
+}
+
+.about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .content img {
+  height: 15rem;
+  width: 15rem;
+  transition: 0.4s;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding-bottom: 10px;
+}
+
+.about .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #3b4ef8;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+/* DP */
+.about .member {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #343a4000;
+  position: relative;
+  overflow: hidden;
+}
+
+.about .member .member-info {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+.about .member .member-info-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  transition: bottom 0.4s;
+}
+
+.about .member .member-info-content h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.about .member .member-info-content span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+.about .member .social {
+  position: absolute;
+  left: 0;
+  bottom: -38px;
+  right: 0;
+  height: 48px;
+  transition: bottom ease-in-out 0.4s;
+  text-align: center;
+}
+
+.about .member .social a {
+  transition: color 0.3s;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.about .member .social a:hover {
+  color: #fff;
+}
+
+.about .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.about .member:hover .member-info {
+  background: linear-gradient(0deg, rgba(12, 17, 26, 0.9) 0%, rgba(20, 29, 43, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+  opacity: 1;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.about .member:hover .member-info-content {
+  bottom: 60px;
+  transition: bottom 0.4s;
+}
+
+.about .member:hover .social {
+  bottom: 0;
+  transition: bottom ease-in-out 0.4s;
+}
 
 /*--------------------------------------------------------------
 # Features
@@ -811,9 +942,13 @@ section {
 }
 
 .feature-container:hover{
-  animation: zovo 2s linear infinite;
+  /* animation: zovo 2s linear infinite; */
+    cursor:pointer;
+  
   
 }
+
+
 
 
 @keyframes zovo {
@@ -824,6 +959,7 @@ section {
     border-bottom: 2px solid #FF4136;
   }
 }
+
 .feature-container{
 /* background-color: var(--backgroundup); */
 color: rgba(255, 255, 255, 0.842);
@@ -834,9 +970,13 @@ border-radius: 5px;
 background: #242424;
 box-shadow:  7px 7px 27px #171717,
              -7px -7px 27px #313131;
+             
 
 }
-
+.webpack img{
+  height: 48px; 
+  width: 48px;
+}
 
 .features .nav-tabs {
   border: 0;
@@ -1394,6 +1534,9 @@ box-shadow:  5px 5px 7px #0e0e0e,
       clip-path: circle(50% at right -10%)
   }
 }
+  
+  
+
 
 /*--------------------------------------------------------------
 # Blog
