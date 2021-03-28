@@ -633,6 +633,11 @@ title{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   animation: animatetxt 10s linear infinite;
+  /* box-shadow:  5px 5px 7px #0e0e0e,
+               -5px -5px 7px #1a1a1a; */
+               margin-top: 50px;
+               margin-bottom: 20px;
+
 }
 @keyframes animatetxt {
   to{
@@ -765,7 +770,7 @@ section {
 
 .section-title h2 {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0;
   line-height: 1px;
   margin: 0 0 5px 0;
@@ -792,6 +797,8 @@ section {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #f5f5f5;
+  position: absolute;
+
 }
 
 /*--------------------------------------------------------------
