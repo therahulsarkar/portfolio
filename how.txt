@@ -36,3 +36,22 @@ requestAnimationFrame(update);
 </script>
 <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436720/particles.js"></script>
 <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436735/app.js"></script>
+
+.contact .php-email-form button[type="submit"] {
+  background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #ff4f09 50%, #de005e 75%, #5335cf 100%);
+  background-size: 400%;
+  font-weight: 300;
+  border: 0;
+  padding-top: 10px;
+  padding: 8px 20px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+  animation: animatebtn 10s linear infinite; 
+}
+
+@keyframes animatebtn {
+  to{
+    background-position: 400%;
+  }
+} 
