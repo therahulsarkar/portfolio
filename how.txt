@@ -55,3 +55,10 @@ requestAnimationFrame(update);
     background-position: 400%;
   }
 } 
+
+
+background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
+border-radius: 13px;
+background: #0d0d0d;
+box-shadow:  5px 5px 9px #090909,
+             -5px -5px 9px #111111;
