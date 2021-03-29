@@ -1878,11 +1878,8 @@ box-shadow:  5px 5px 7px #0e0e0e,
   position: relative;
   border-radius: 7px;
   /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
-  /* background: linear-gradient(45deg, #ff2609 0%, #ff2247  25%, #ff0c69 50%, #f00064 75%,  #fc014c 100%); */
-  background-image: radial-gradient( circle farthest-corner at 50.4% 50.5%,  rgb(251, 32, 43) 0%, rgba(135,2,35,1) 90% );
-  /* background-image: radial-gradient( circle farthest-corner at 3.1% 6.8%,  rgba(199,0,59,1) 0%, rgba(255,88,53,1) 97.7% ); */
-  /* background-image: linear-gradient( 90.8deg,  rgba(205,5,32,1) 0.5%, rgba(205,10,90,1) 99.9% ); */
-  
+  /* background-image: radial-gradient( circle farthest-corner at 50.4% 50.5%,  rgb(251, 32, 43) 0%, rgba(135,2,35,1) 90% ); */
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(224, 32, 32) 0%, rgb(153, 0, 71) 90% );
   box-shadow:  9px 9px 18px #1a1a1a,
                -9px -9px 18px #1f1f1f;
 
