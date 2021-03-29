@@ -4,7 +4,7 @@ var typewriter = new Typewriter(txtanimate, {
 });
 
 typewriter.pauseFor(2000)
-    .typeString('Hello')
+    .typeString("Hello<span id='animatetextcolour'>.</span>")
     .pauseFor(1200)
     .deleteAll()
     .typeString("I'am  <span id='animatetextcolour'>Rahul</span>")
