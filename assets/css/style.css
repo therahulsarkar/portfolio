@@ -26,11 +26,11 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
   background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
@@ -947,7 +947,7 @@ section {
 }
 
 .feature-container:hover{
-  /* animation: zovo 2s linear infinite; */
+  animation: zovo 2s linear infinite;
     cursor:pointer;
   
   
@@ -1458,11 +1458,10 @@ animation: zoominout 5s infinite;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   background: linear-gradient(45deg, rgb(34, 34, 34), #181818);
   box-shadow:  5px 5px 10px #0e0e0e,
   -5px -5px 10px #161616;
-  /* border: 2px solid #0f0f0f; */
 }
 
 .form-control{
@@ -1506,27 +1505,22 @@ box-shadow:  5px 5px 7px #0e0e0e,
   color: #fff
 }
 
+
 .containerz .row .card .card-body .card-img img {
   width: 60px;
   height: 60px;
   object-fit: cover;
-  transform: translateY(50px);
+  transform: translateY(10px);
   transition: 0.5s;
   border-radius: 50%
 }
 
 .containerz .row .card .card-body .name {
-  transform: translateY(50px);
+  transform: translateY(30px);
   transition: 0.5s
 }
 
-.containerz .row .card .card-body .testimonial {
-  font-size: 0.9rem;
-  pointer-events: none;
-  transform: translateY(10px);
-  transition: 0.5s;
-  opacity: 0
-}
+
 
 .containerz .row .card:hover .card-body .testimonial,
 .containerz .row .card:hover .card-body .name,
@@ -1667,7 +1661,7 @@ box-shadow:  5px 5px 7px #0e0e0e,
   border-radius: 7px;
   /* background-image: radial-gradient( circle farthest-corner at 50.4% 50.5%,  rgba(251,32,86,1) 0%, rgb(161, 0, 40) 90% ); */
   /* background-image: radial-gradient( circle farthest-corner at 50.4% 50.5%,  rgb(251, 32, 43) 0%, rgba(135,2,35,1) 90% ); */
-   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(207, 0, 0) 0%, rgb(153, 0, 71) 90% ); 
+   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(180, 1, 45) 0%, rgb(138, 0, 64) 90% ); 
   box-shadow:  9px 9px 18px #1a1a1a,
                -9px -9px 18px #1f1f1f;
 
@@ -1972,3 +1966,32 @@ box-shadow:  5px 5px 9px #1a1a1a,
 font-size: 1rem;
 color: green;
 }
+
+.card a i{
+  color: #fff;
+}
+
+.containerz .card .read-more {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 10px 40px 10px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #ffff;
+  margin-top: 9vh;
+  background-image: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
+  box-shadow: 0 8px 28px rgba(255, 0, 64, 0.5);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 65px 50px 0px 50px;
+}
+
+.containerz .card .read-more:hover {
+  background-image: linear-gradient(to left, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
+  transform: translateY(-10px);
+  transition: all 0.5s linear;
+}
+
