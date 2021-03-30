@@ -958,7 +958,7 @@ section {
 
 @keyframes zovo {
   0% {
-    border-bottom: 2px solid rgb(253, 11, 124);
+    border-bottom: 2px solid rgb(221, 0, 85);
   }
   100% {
     border-bottom: 2px solid #FF4136;
@@ -1299,7 +1299,66 @@ box-shadow:  29px 29px 58px #0d0d0d,
   width:48px;
 }
 
+/* Images */
+.imgsec {
+  /* margin-top: 80px;*/
+  margin-bottom: 80px; 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.imgsec .row .card {
+  width: 300px;
+  height: 300px;
+  /* margin: 30px; */
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  /* background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5); */
+  border-radius: 5px;
+  cursor: pointer;
+  background: #141414;
+  box-shadow:  5px 5px 7px #0e0e0e,
+             -5px -5px 7px #1a1a1acc;
+}
+
+.imgsec .row .card:hover {
+transform: scale(1.05);
+transition: 0.3s;
+box-shadow:  5px 5px 7px #0e0e0e,
+-5px -5px 7px #222222cc;
+}
+
+.imgsec .row .card .card-body .card-img img {
+  width: 250px;
+  height: 220px;
+  transform: translateY(10px);
+  transition: 0.5s;
+}
+
+
+
+
+.imgsec .row .card:hover .card-body .testimonial,
+.imgsec .row .card:hover .card-body .name,
+.imgsec .row .card:hover .card-body .card-img img {
+  transform: translateY(0px);
+  opacity: 1
+}
+
+@media(max-width: 991.5px) {
+  body::after {
+      clip-path: circle(40% at 10% 50%)
+  }
+
+  body::before {
+      clip-path: circle(50% at right -10%)
+  }
+}
+  
 
 
 /*--------------------------------------------------------------
