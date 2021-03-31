@@ -898,7 +898,7 @@ section{
     text-align: justify;
     /* letter-spacing: 0px; */
     word-spacing: 0;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -920,6 +920,7 @@ section{
   right: 0;
   transition: 0.2s;
 }
+
 
 .about .member .member-info-content {
   position: absolute;
@@ -986,6 +987,10 @@ section{
   transition: bottom ease-in-out 0.4s;
 }
 
+.member img{
+  border: 4px solid rgb(241, 28, 0);
+  border-radius: 50%;
+}
 /*--------------------------------------------------------------
 #Social
 --------------------------------------------------------------*/
