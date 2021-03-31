@@ -483,29 +483,27 @@ title{
 
 #hero .btn-get-started {
   font-family: "Poppins", sans-serif;
-  /* text-transform: uppercase; */
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   display: inline-block;
-  padding: 10px 35px 10px 35px;
+  padding: 9px 25px 9px 25px;
   border-radius: 50px;
   transition: 0.5s;
   color: rgb(255, 255, 255);
-  background: #ff491700;
-  border: 2.3px solid #eb3401;
+  background: #220f0a00;
+  border: 2.3px solid #ff3700;
   margin-top: 30px;
 }
 
 #hero .btn-get-started:hover {
   border-color: #fff;
-  background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
+  background: linear-gradient(to right,  rgb(241, 28, 0) 0%,  rgb(255, 0, 76) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #ffff;
   transition: all 0.5s ease-in-out;
   font-size:15px;
   cursor: pointer;
-  
 }
 
 
