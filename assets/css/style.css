@@ -162,8 +162,8 @@
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(21, 34, 43, 0.85);
-  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.801);
+  padding: 15px 0;
 }
 
 #header .logo {
@@ -193,7 +193,7 @@ title{
 }
 
 .dot{
-  background: linear-gradient(to left, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
+  background: linear-gradient(to left, rgb(232, 69, 5) 0%, rgb(253, 11, 71) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -249,7 +249,7 @@ title{
   height: 2px;
   bottom: -6px;
   left: 0;
-  background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
+  background: linear-gradient(to right, rgb(232, 69, 5) 0%, rgb(253, 11, 71) 100% );
   visibility: hidden;
   width: 0px;
   transition: all 0.4s ease-in-out 0s;
@@ -467,7 +467,7 @@ title{
 
 
 #animatetextcolour{
-  background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
+  background: linear-gradient(to right, rgb(241, 28, 0) 0%,  rgb(255, 0, 76) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
