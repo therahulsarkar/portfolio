@@ -8,27 +8,27 @@
 /*--------------------------------------------------------------
  General
 --------------------------------------------------------------*/
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--background);
-  scroll-behavior: smooth;
-}
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    scroll-behavior: smooth;
+  }
 
-
-a {
-  color: #ff4a17;
-  text-decoration: none;
-}
-
-/* a:hover {
-  background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
-}
+  a {
+    color: #ff4a17;
+    text-decoration: none;
+  }
+  a:hover {
+    background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.2);
+    transition: all 0.3s linear;
+    font-weight: 800;
+  } 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+  }
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -41,13 +41,11 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 15px;
   z-index: 996;
   background: linear-gradient(45deg, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
-
   width: 40px;
   height: 40px;
-  border-radius: 4px;
+  border-radius: 5px;
   transition: all 0.4s;
 }
-
 .back-to-top i {
   font-size: 24px;
   color: #fff;
@@ -55,10 +53,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #ff6a40;
-  color: #fff;
+  background: linear-gradient(-45deg, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
+  cursor: pointer;
 }
 
+.back-to-top i {
+  color: #fff;
+
+}
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
@@ -749,7 +751,7 @@ title{
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-section {
+section{
   padding: 40px 0;
   overflow: hidden;
 }
@@ -763,17 +765,14 @@ section {
 }
 
 .section-title h2 {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   padding: 0;
   line-height: 1px;
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #5c8eb0;
-  font-family: "Poppins", sans-serif;
 }
-
 .section-title h2::after {
   content: "";
   width: 120px;
@@ -781,18 +780,29 @@ section {
   display: inline-block;
   background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
   margin: 4px 10px;
+  z-index: 2;
 }
+
 
 .section-title p {
-  margin: 0;
-  margin: 0;
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 900;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #f5f5f5;
+  color: var(--backgroundup);
+  text-shadow: 7px 13px 5px rgba(0,0,0,0.2),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
 }
 
+
+@media screen and (max-width: 768px) {
+  .section-title p {
+  font-size: 2rem;
+  font-weight: bolder;
+
+  }
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -934,7 +944,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Features
+#Social
 --------------------------------------------------------------*/
 .features{
   background-color: var(--background);
@@ -943,12 +953,7 @@ section {
 .feature-container:hover{
   animation: zovo 2s linear infinite;
     cursor:pointer;
-  
-  
 }
-
-
-
 
 @keyframes zovo {
   0% {
@@ -960,17 +965,12 @@ section {
 }
 
 .feature-container{
-/* background-color: var(--backgroundup); */
-color: rgba(255, 255, 255, 0.842);
-/* pointer-events: none; */
 cursor: pointer;
 text-decoration: none;
 border-radius: 5px;
 background: #242424;
 box-shadow:  7px 7px 27px #171717,
              -7px -7px 27px #313131;
-             
-
 }
 .webpack img{
   height: 48px; 
@@ -980,6 +980,8 @@ box-shadow:  7px 7px 27px #171717,
 .features .nav-tabs {
   border: 0;
 }
+
+
 
 .features .nav-link {
   border: 1px solid #b5ccdb;
@@ -1598,12 +1600,7 @@ box-shadow:  5px 5px 7px #0e0e0e,
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
-
-
 .recent-blog-posts .post-box {
-  background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   transition: 0.3s;
   height: 100%;
   overflow: hidden;
@@ -1627,13 +1624,12 @@ box-shadow:  5px 5px 7px #0e0e0e,
   transition: 0.5s;
 }
 
-
 .recent-blog-posts .post-box .post-title {
-  font-size: 24px;
+  font-size: 1.2rem;
   background: linear-gradient(to right, rgb(245, 245, 245) 0%, rgb(245, 245, 245)100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 18px;
   position: relative;
   transition: 0.3s;
@@ -1642,10 +1638,10 @@ box-shadow:  5px 5px 7px #0e0e0e,
 .recent-blog-posts .post-box .readmore {
   display: flex;
   align-items: center;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
   transition: 0.3s;
-  background: linear-gradient(to right, rgba(232,5,5,1) 0%, rgb(253, 11, 124) 100%);
+  background: linear-gradient(to left, rgba(232,5,5,1) 0%, rgb(255, 35, 6) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1653,17 +1649,20 @@ box-shadow:  5px 5px 7px #0e0e0e,
 .recent-blog-posts .post-box .readmore i {
   line-height: 0;
   margin-left: 4px;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
-.recent-blog-posts .post-box:hover .post-title {
-  color: #4154f1;
+.recent-blog-posts .post-box .readmore:hover {
+
+  background: linear-gradient(to left, rgb(255, 116, 116) 0%, rgb(255, 35, 6) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 
 .recent-blog-posts .post-box:hover .post-img img {
   transform: rotate(6deg) scale(1.2);
 }
-
 
 @media screen and (max-width: 768px) {
   .col-lg-4{
@@ -1683,6 +1682,8 @@ box-shadow:  5px 5px 7px #0e0e0e,
   }
 }
 
+
+/* Contact */
 .contact .php-email-form button[type="submit"] {
   background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #ff4f09 50%, #de005e 75%, #5335cf 100%);
   background-size: 400%;
