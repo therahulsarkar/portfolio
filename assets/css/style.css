@@ -1577,7 +1577,7 @@ box-shadow:  5px 5px 7px #0e0e0e,
   object-fit: cover;
   transform: translateY(10px);
   transition: 0.5s;
-  border-radius: 50%
+  border-radius: 0%
 }
 
 .containerz .row .card .card-body .name {
