@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&display=swap');
 :root{
   --background: #161616;
-  --backgroundup: #333333;
+  --backgroundup: #3a3a3a;
   --lightwhite: #8899a6;
 }
 
@@ -766,7 +766,7 @@ section{
 
 .section-title h2 {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 0;
   line-height: 1px;
   margin: 0 0 5px 0;
@@ -946,6 +946,14 @@ section{
 /*--------------------------------------------------------------
 #Social
 --------------------------------------------------------------*/
+.features-container .feature-container h3{
+  color: #ffff;
+  font-weight: 300;
+}
+
+
+
+
 .features{
   background-color: var(--background);
 }
@@ -982,7 +990,9 @@ box-shadow:  7px 7px 27px #171717,
 }
 
 
-
+.skill-div h3{
+  color: #ffff;
+}
 .features .nav-link {
   border: 1px solid #b5ccdb;
   padding: 15px;
@@ -1275,7 +1285,7 @@ box-shadow:  29px 29px 58px #0d0d0d,
 }
 
 .features .icon-box h3 {
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
   padding: 0;
   line-height: 1;
